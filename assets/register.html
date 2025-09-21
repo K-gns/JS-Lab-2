@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .register-container {
+            min-height: 100vh;
+        }
+        .card {
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container d-flex justify-content-center align-items-center register-container">
+    <div class="card col-md-6 col-lg-4 shadow">
+        <div class="card-header text-center">
+            <h3><i class="fas fa-user-plus"></i> Регистрация</h3>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Имя пользователя</label>
+                    <input type="text" class="form-control" id="username" placeholder="Введите имя пользователя" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Адрес электронной почты</label>
+                    <input type="email" class="form-control" id="email" placeholder="Введите email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="password" placeholder="Введите пароль" required>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="eula" required>
+                    <label class="form-check-label" for="eula">
+                        Я ознакомлен с пользовательским соглашением (EULA)
+                    </label>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-user-plus"></i> Зарегистрироваться
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
